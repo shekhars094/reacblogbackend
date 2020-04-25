@@ -20,7 +20,7 @@ app.use("/api/v1", userRouter);
 app.use("/api/v1", postRouter);
 
 app.get("/", (req, res) => {
-	res.json((message: "Everything is fine"));
+	res.json({ message: "Everything is fine" });
 });
 
 app.listen(port, () => {
